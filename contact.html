@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact PrimeBox Solutions | Corrugated Packaging Experts</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/box-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation (Consistent with index.html) -->
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="marketing.html">Sustainability</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="nav-ctas">
+          <a href="tel:+1234567890" class="phone-button">
+            <i class="fas fa-phone"></i>
+            <span>Call Us</span>
+          </a>
+          <a href="contact.html#quote" class="quote-button">Request Custom Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Page Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Our team is ready to discuss your custom packaging needs.</p>
+    </div>
+  </section>
+
+  <main class="contact-page">
+    <!-- Quote Request Form (Anchor target for navigation) -->
+    <section id="quote" class="quote-section">
+      <div class="container">
+        <h2 class="section-title">Request a Custom Quote</h2>
+        <form class="quote-form" id="quoteForm" netlify>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number*</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="product">Product Interest*</label>
+              <select id="product" name="product" required>
+                <option value="">Select Product Type</option>
+                <option value="single-wall">Single Wall Boxes</option>
+                <option value="double-wall">Double Wall Boxes</option>
+                <option value="printed">Printed Boxes</option>
+                <option value="custom">Custom Solution</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="quantity">Estimated Monthly Quantity</label>
+              <input type="text" id="quantity" name="quantity" placeholder="E.g., 500-1000 units">
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="5" placeholder="Dimensions, printing requirements, special features..."></textarea>
+            </div>
+            <div class="form-group full-width">
+                <label for="file-upload">Upload Design Files (Optional)</label>
+                <div class="file-upload-wrapper">
+                  <input type="file" id="file-upload" name="files" multiple 
+                         accept=".pdf,.jpg,.jpeg,.png,.ai,.eps,.cdr">
+                  <label for="file-upload" class="file-upload-label">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span>Choose files or drag and drop</span>
+                    <small>Max. file size: 10MB (PDF, JPG, PNG, AI, EPS, CDR)</small>
+                  </label>
+                  <div class="file-upload-preview"></div>
+                </div>
+              </div>
+          </div>
+          <button type="submit" class="cta-button">Submit Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <address>
+              123 Packaging Avenue<br>
+              Industrial Zone, Mumbai 400001<br>
+              Maharashtra, India
+            </address>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h3>Call Us</h3>
+            <p>
+              <a href="tel:+912212345678">+91 22 1234 5678</a><br>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>
+              <a href="mailto:sales@primeboxsolutions.com">sales@primeboxsolutions.com</a><br>
+              <a href="mailto:support@primeboxsolutions.com">support@primeboxsolutions.com</a>
+            </p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <h3>Business Hours</h3>
+            <p>
+              Monday - Friday: 9AM - 6PM<br>
+              Saturday: 10AM - 2PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Maps Embed -->
+    <section class="map-section">
+      <div class="container">
+        <h2 class="section-title">Our Location</h2>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1  d:YOUR_PLACE_ID" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Consistent with index.html) -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 PrimeBox Solutions. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="developer-credit"><small>Developed and Maintained by Visharad Tikale</small></p>
+    </div>
+  </footer>
+
+  <!-- Floating CTA (Mobile) -->
+  <a href="contact.html#quote" class="floating-cta" aria-label="Request Quote">
+    <i class="fas fa-box-open"></i>
+    <span>Get Quote</span>
+  </a>
+  <script>
+    // File Upload Preview Functionality
+    const fileUpload = document.getElementById('file-upload');
+    const filePreview = document.querySelector('.file-upload-preview');
+  
+    fileUpload.addEventListener('change', function() {
+      filePreview.innerHTML = '';
+      if (this.files.length > 0) {
+        Array.from(this.files).forEach(file => {
+          const previewItem = document.createElement('div');
+          previewItem.className = 'file-preview-item';
+          previewItem.innerHTML = `
+            ${file.name} (${formatFileSize(file.size)})
+            <i class="fas fa-times" onclick="removeFilePreview(this)"></i>
+          `;
+          filePreview.appendChild(previewItem);
+        });
+      }
+    });
+  
+    function formatFileSize(bytes) {
+      if (bytes === 0) return '0 Bytes';
+      const k = 1024;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+    }
+  
+    function removeFilePreview(element) {
+      const items = Array.from(fileUpload.files);
+      const itemText = element.parentNode.textContent.trim().split(' (')[0];
+      const updatedItems = items.filter(file => file.name !== itemText);
+      
+      // Create new DataTransfer for updated files
+      const dataTransfer = new DataTransfer();
+      updatedItems.forEach(file => dataTransfer.items.add(file));
+      fileUpload.files = dataTransfer.files;
+      
+      // Remove the preview
+      element.parentNode.remove();
+    }
+  </script>
+</body>
+</html>
