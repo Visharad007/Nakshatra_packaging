@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | PrimeBox Solutions - Corrugated Packaging Experts</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/box-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation (Consistent with other pages) -->
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="marketing.html">Sustainability</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-ctas">
+          <a href="tel:+1234567890" class="phone-button">
+            <i class="fas fa-phone"></i>
+            <span>Call Us</span>
+          </a>
+          <a href="contact.html#quote" class="quote-button">Request Custom Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Products Hero Section -->
+  <section class="products-hero">
+    <div class="container">
+      <h1>Our Packaging Solutions</h1>
+      <p>High-quality corrugated boxes tailored to your business requirements</p>
+    </div>
+  </section>
+
+  <main class="products-page">
+    <!-- Product Filter System -->
+    <section class="product-filters">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-group">
+            <label for="product-type">Filter by Type:</label>
+            <select id="product-type">
+              <option value="all">All Products</option>
+              <option value="single-wall">Single Wall</option>
+              <option value="double-wall">Double Wall</option>
+              <option value="printed">Printed Boxes</option>
+              <option value="custom">Custom Solutions</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="industry">Industry:</label>
+            <select id="industry">
+              <option value="all">All Industries</option>
+              <option value="ecommerce">E-commerce</option>
+              <option value="food">Food & Beverage</option>
+              <option value="electronics">Electronics</option>
+              <option value="industrial">Industrial</option>
+            </select>
+          </div>
+          <button id="reset-filters" class="filter-button">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-listing">
+      <div class="container">
+        <div class="products-grid">
+          <!-- Product 1: Single Wall Box -->
+          <div class="product-card" data-type="single-wall" data-industry="ecommerce">
+            <div class="product-badge">Bestseller</div>
+            <img src="images/single-wall-box1.png" alt="Single Wall Corrugated Box" class="product-image">
+            <div class="product-details">
+              <h3>Single Wall Boxes</h3>
+              <div class="product-specs">
+                <p><i class="fas fa-ruler-combined"></i> <strong>Available Sizes:</strong> 12"x12" to 48"x48"</p>
+                <p><i class="fas fa-layer-group"></i> <strong>Flute Types:</strong> B, C, E</p>
+                <p><i class="fas fa-weight-hanging"></i> <strong>Max. Load:</strong> 20-30 kg</p>
+              </div>
+              <p class="product-desc">Lightweight yet durable boxes perfect for e-commerce shipments and lightweight products.</p>
+              <div class="product-cta">
+                <a href="contact.html#quote" class="cta-button small">Get Quote</a>
+                <a href="#single-wall-details" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: Double Wall Box -->
+          <div class="product-card" data-type="double-wall" data-industry="electronics industrial">
+            <div class="product-badge premium">Premium</div>
+            <img src="images/double-wall-box.jpg" alt="Double Wall Corrugated Box" class="product-image">
+            <div class="product-details">
+              <h3>Double Wall Boxes</h3>
+              <div class="product-specs">
+                <p><i class="fas fa-ruler-combined"></i> <strong>Available Sizes:</strong> 18"x18" to 60"x60"</p>
+                <p><i class="fas fa-layer-group"></i> <strong>Flute Types:</strong> BC, EB</p>
+                <p><i class="fas fa-weight-hanging"></i> <strong>Max. Load:</strong> 50-80 kg</p>
+              </div>
+              <p class="product-desc">Extra protection for heavy or fragile items with superior stacking strength.</p>
+              <div class="product-cta">
+                <a href="contact.html#quote" class="cta-button small">Get Quote</a>
+                <a href="#double-wall-details" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: Printed Box -->
+          <div class="product-card" data-type="printed" data-industry="ecommerce food">
+            <img src="images/printed-box.jpg" alt="Custom Printed Corrugated Box" class="product-image">
+            <div class="product-details">
+              <h3>Printed Boxes</h3>
+              <div class="product-specs">
+                <p><i class="fas fa-palette"></i> <strong>Print Options:</strong> 1-6 colors</p>
+                <p><i class="fas fa-print"></i> <strong>Technique:</strong> Flexo/Litho</p>
+                <p><i class="fas fa-box"></i> <strong>Finish:</strong> Gloss/Matt</p>
+              </div>
+              <p class="product-desc">Branded packaging that enhances unboxing experience and brand recognition.</p>
+              <div class="product-ct t a">
+                <a href="contact.html#quote" class="cta-button small">Get Quote</a>
+                <a href="#printed-details" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Custom Solution -->
+          <div class="product-card" data-type="custom" data-industry="all">
+            <div class="product-badge new">New</div>
+            <img src="images/custom-solution.jpg" alt="Custom Packaging Solution" class="product-image">
+            <div class="product-details">
+              <h3>Custom Solutions</h3>
+              <div class="product-specs">
+                <p><i class="fas fa-lightbulb"></i> <strong>Design:</strong> Tailored to needs</p>
+                <p><i class="fas fa-cog"></i> <strong>Features:</strong> Inserts, Handles, etc.</p>
+                <p><i class="fas fa-tags"></i> <strong>MOQ:</strong> 500 units</p>
+              </div>
+              <p class="product-desc">Fully customized packaging solutions for unique product requirements.</p>
+              <div class="product-cta">
+                <a href="contact.html#quote" class="cta-button small">Get Quote</a>
+                <a href="#custom-details" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Detail Sections -->
+    <section class="product-details-section">
+      <div class="container">
+        <!-- Single Wall Details -->
+        <div id="single-wall-details" class="product-detail">
+          <h2>Single Wall Corrugated Boxes</h2>
+          <div class="detail-content">
+            <img src="images/single-wall-detail.jpg" alt="Single Wall Box Construction">
+            <div class="detail-text">
+              <h3>Features & Benefits</h3>
+              <ul>
+                <li>Lightweight yet durable 3-layer construction</li>
+                <li>Ideal for e-commerce and lightweight products (under 30kg)</li>
+                <li>Available in standard and custom sizes</li>
+                <li>Multiple flute profiles (B, C, E) for different needs</li>
+                <li>Cost-effective shipping solution</li>
+                <li>100% recyclable and eco-friendly</li>
+              </ul>
+              <div class="spec-table">
+                <h4>Technical Specifications</h4>
+                <table>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Specification</th>
+                  </tr>
+                  <tr>
+                    <td>Material</td>
+                    <td>Kraft paper 150-200 GSM</td>
+                  </tr>
+                  <tr>
+                    <td>Bursting Strength</td>
+                    <td>12-18 kgf/cm²</td>
+                  </tr>
+                  <tr>
+                    <td>Edge Crush Test</td>
+                    <td>18-25 lb/in</td>
+                  </tr>
+                  <tr>
+                    <td>Moisture Resistance</td>
+                    <td>Standard/Waterproof options</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Double Wall Details (other product details would follow same pattern) -->
+      </div>
+    </section>
+  </main>
+
+  <!-- CTA Section -->
+  <section class="products-cta">
+    <div class="container">
+      <h2>Ready to Order or Need Custom Solutions?</h2>
+      <p>Our packaging experts are ready to assist you with the perfect boxes for your products.</p>
+      <div class="cta-buttons">
+        <a href="contact.html#quote" class="cta-button">Request Quote</a>
+        <a href="tel:+1234567890" class="cta-button secondary">Call Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Consistent with other pages) -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 PrimeBox Solutions. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p class="developer-credit"><small>Developed and Maintained by Visharad Tikale</small></p>
+    </div>
+  </footer>
+
+  <!-- Floating CTA (Mobile) -->
+  <a href="contact.html#quote" class="floating-cta" aria-label="Request Quote">
+    <i class="fas fa-box-open"></i>
+    <span>Get Quote</span>
+  </a>
+
+  <script>
+    // Product Filter Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const typeFilter = document.getElementById('product-type');
+      const industryFilter = document.getElementById('industry');
+      const resetBtn = document.getElementById('reset-filters');
+      const productCards = document.querySelectorAll('.product-card');
+
+      function filterProducts() {
+        const typeValue = typeFilter.value;
+        const industryValue = industryFilter.value;
+
+        productCards.forEach(card => {
+          const cardType = card.getAttribute('data-type');
+          const cardIndustry = card.getAttribute('data-industry');
+
+          const typeMatch = typeValue === 'all' || cardType === typeValue;
+          const industryMatch = industryValue === 'all' || cardIndustry.includes(industryValue);
+
+          if (typeMatch && industryMatch) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      typeFilter.addEventListener('change', filterProducts);
+      industryFilter.addEventListener('change', filterProducts);
+      resetBtn.addEventListener('click', function() {
+        typeFilter.value = 'all';
+        industryFilter.value = 'all';
+        filterProducts();
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
